@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dffba75db4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav >
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hii<span>!!</span> I'm <span>Maitray</span><br>Welcome to my Page!!</h1>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="new.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p class="new" style="font-size: 20px;">
+                        I am Maitray Gole, a Web Developer currently pursuing my BTech at VIT Bhopal University, graduating in 2025. With a strong proficiency in PHP, SQL, HTML, CSS, and JavaScript, I specialize in developing and optimizing backend systems for web applications. My technical expertise is complemented by solid soft skills, including communication, problem-solving, and sales management. I have worked on diverse projects such as a Medical Symptom Checker, House Price Prediction System, Customer Relationship Management System, and a Film Review System. Additionally, I wrote a sales paper on Instagram Reels. In addition to my professional pursuits, I am learning Japanese and enjoy hobbies like swimming, chess, and basketball.
+                    </p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>BackEnd Development</span><br>Experienced in developing and maintaining robust backend systems using PHP and SQL, ensuring efficient data processing and integration.</li> 
+                            <li><span>FrontEnd Development</span><br>Proficient in creating responsive and user-friendly web interfaces with HTML, CSS, and JavaScript, enhancing user experience and engagement.</li> 
+                            <li><span>Database Developement</span><br>Skilled in designing and managing databases using PHP and MySQL, optimizing data storage and retrieval for seamless application performance.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 Current</span><br>Web Development intern at Calanjiyam Consultancies and Technologies</li>
+                            <li><span>2024 current</span><br>Web Development intern at Reliance Industries</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-ongoing</span><br>Persuing Btech From VIT Bhopal University In CSE</li>
+                            <li><span>2021</span><br>Completed My Class XII From Reliance Foundation School with 85.2%</li>
+                            <li><span>2019</span><br>Completed My Class X From Reliance Foundation School with 83.6%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Roles</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <br><br>
+                    <h2>BackEnd Developer <br> with (PHP-SQL)</h2>
+                    <br>
+                    <p>Proficient in developing and maintaining robust backend systems using PHP. Skilled in database management and optimization with SQL, ensuring efficient data handling and seamless integration with web applications.
+                    </p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <br><br>
+                    <h2>FrontEnd Developer in HTML, CSS and JS
+                    </h2>
+                    <br>
+                    <p>As a Frontend Developer, I create responsive and interactive web interfaces using HTML, CSS, and JavaScript. I ensure that designs are translated into visually appealing and user-friendly websites, enhancing the overall user experience.</p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <br><br>
+                    <h2>Database Developer in PHP and MySQL
+                    </h2>
+                    <br>
+                    <p>As a Database Developer, I specialize in designing, implementing, and managing databases using PHP and MySQL. I focus on optimizing data storage and retrieval processes to support seamless and efficient web application performance.</p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+        <div class="work">
+        <img src="work-4.png">
+        <div class="layer">
+            <h3>Nutricin</h3>
+            <p>A Medical Symptoms Checker where Users can enter various symptoms they are experiencing.
+                The system analyzes the input and provides possible diseases and suggested cures.</p>
+            <a href="https://github.com/Maitray19"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+        <img src="work-5.png">
+        <div class="layer">
+            <h3>Brickage</h3>
+            <p>A House Price Prediction System where Users can input various criteria such as location, price range, and number of bedrooms and get the listing of flats available</p>
+            <a href="https://github.com/Maitray19"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+        <img src="work-6.png">
+        <div class="layer">
+            <h3>CRM SYSTEM</h3>
+            <p>A Customer Relationship Management System where customers can request services through the portal easily</p>
+            <a href="https://github.com/Maitray19"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        </div>
+        <a href="https://github.com/Maitray19" class="btn">see more</a>
+        </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+            <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-regular fa-paper-plane"></i>maitraygole@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8446476751</p>
+            <div class="social-icons">
+            <a href="https://www.instagram.com/m_g3.012/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/m-g-322a50280/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Maitray19"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:email@example.com"><i class="fa-solid fa-envelope"></i></a>
+    
+        </div>
+        <a href="my-cv.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+            </div>
+            </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @Maitray :/ made with <i class="fa-solid fa-dove"></i></p>
+            </div>
+            </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+        sidemeu.style.right = "0";
+        }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+        }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxtZlcCtMG_wQYgN_r2nhm8Pm71BqWdFfvgFByofVb-1T_6vfE5wWZaGgw0rIIjyc6x/exec';
+            const form = document.forms['submit-to-google-sheet']; 
+            const msg = document.getElementById("msg");
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Thanks for message, I'll get back to you soon!!";
+                        setTimeout(function(){
+                            msg.innerHTML = "";
+                        }, 5000); 
+                        form.reset();
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+        
+</body>
+</html>
